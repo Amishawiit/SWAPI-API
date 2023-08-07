@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: swapi
+#tag::db[]
+db:
+  name: 'people'
+  collection: 'people'
+#end::db[]
+mongodb:
+  uri: mongodb://localhost:27017
+kafka:
+  bootstrap:
+    servers:
+      - localhost:9092
